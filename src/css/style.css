@@ -1,0 +1,45 @@
+#slide1{
+  background: url("../images/orange.jpg") top right /cover no-repeat;
+}
+
+#slide2{
+  background: url("../images/skincare.jpg") center right /cover no-repeat;
+}
+
+#slide3{
+  background: url("../images/soap.jpg") center center /cover no-repeat;
+}
+
+#slide4{
+  background: url("../images/bed.jpg") center center/cover no-repeat; 
+}
+
+#slide5{
+  background: url("../images/skincare-products.jpg") center center/cover no-repeat; 
+}
+
+.block-cursor{
+  pointer-events: none;
+  cursor: unset;
+  opacity: 0.5;
+}
+
+#highlight-slide1{
+  color: #eb861b;
+}
+
+#highlight-slide2{
+  color: #8fa627;
+}
+
+#highlight-slide3{
+  color: #A63A17;
+}
+
+#highlight-slide4{
+  color: #9DA166;
+}
+
+#highlight-slide5{
+  color: #3c5b27;
+}
