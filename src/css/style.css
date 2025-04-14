@@ -1,20 +1,20 @@
-#slide1{
+.slide0{
   background: url("../images/orange.jpg") top right /cover no-repeat;
 }
 
-#slide2{
+.slide1{
   background: url("../images/skincare.jpg") center right /cover no-repeat;
 }
 
-#slide3{
+.slide2{
   background: url("../images/soap.jpg") center center /cover no-repeat;
 }
 
-#slide4{
+.slide3{
   background: url("../images/bed.jpg") center center/cover no-repeat; 
 }
 
-#slide5{
+.slide4{
   background: url("../images/skincare-products.jpg") center center/cover no-repeat; 
 }
 
