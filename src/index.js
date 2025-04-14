@@ -1,45 +1,37 @@
+const background = document.getElementById('container')
 const slides = document.querySelectorAll('.slide')
-const forwardArrows = document.querySelectorAll('.forward-arrow')
-const backArrows = document.querySelectorAll('.back-arrow')
+const forwardArrows = document.getElementById('forward-arrow')
+const backArrows = document.getElementById('back-arrow')
 
-forwardArrows.forEach((forwardArrow, index) => {
-  forwardArrow.addEventListener('click', () => {
-    function removerSlide() {
-      let currentSlide = slides[index].classList.contains('current')
+let currentIndex = 0;
 
-      if (currentSlide) {
-        slides[index].classList.remove('current')
-        slides[index].classList.add('hided')
-      }
-    }
-    removerSlide()
-
-    function adicionarSlide() {
-        slides[index + 1].classList.remove('hided')
-        slides[index + 1].classList.add('current')
-    }
-    adicionarSlide()
-  })
+forwardArrows.addEventListener('click', () => {
+  if (currentIndex < slides.length - 1) {
+    changeSlide(currentIndex, currentIndex + 1)
+    currentIndex++
+    backArrows.classList.remove('block-cursor')
+  }
+  if(currentIndex == slides.length -1){
+    forwardArrows.classList.add('block-cursor')
+  }
 })
 
-
-backArrows.forEach((backArrow, index) => {
-  backArrow.addEventListener('click', () => {
-    function removerSlide() {
-      let currentSlide = slides[index].classList.contains('current')
-
-      if (currentSlide) {
-        slides[index].classList.remove('current')
-        slides[index].classList.add('hided')
-      }
-    }
-    removerSlide()
-
-    function adicionarSlide() {
-        slides[index - 1].classList.remove('hided')
-        slides[index - 1].classList.add('current')
-    }
-    adicionarSlide()
-  })
+backArrows.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    changeSlide(currentIndex, currentIndex - 1)
+    currentIndex--
+    forwardArrows.classList.remove('block-cursor')
+  }
+  if(currentIndex == 0){
+    backArrows.classList.add('block-cursor')
+  }
 })
 
+function changeSlide(currentIndex, nextIndex) {
+  slides[currentIndex].classList.remove('current')
+  slides[currentIndex].classList.add('hidden')
+  slides[nextIndex].classList.remove('hidden')
+  slides[nextIndex].classList.add('current')
+  background.classList.remove(`slide${currentIndex}`)
+  background.classList.add(`slide${nextIndex}`)
+}
