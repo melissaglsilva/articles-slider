@@ -1,45 +1,116 @@
-.slide0{
-  background: url("../images/orange.jpg") top right /cover no-repeat;
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  font-size: 62.5%;
 }
 
-.slide1{
-  background: url("../images/skincare.jpg") center right /cover no-repeat;
+#container {
+  height: 100vh;
+  display: grid;
+  font-family: "Roboto", sans-serif;
+  background-color: #646464;
+  grid: "back-arrow slide . forward-arrow";
+  grid-template-columns: 130px 700px 1fr 130px;
+  align-items: center;
+  justify-items: center;
+  transition: background-image 1000ms ease;
 }
 
-.slide2{
-  background: url("../images/soap.jpg") center center /cover no-repeat;
+.slide0 {
+  background: url("../images/skincare.jpg") center left /cover no-repeat;
 }
 
-.slide3{
-  background: url("../images/bed.jpg") center center/cover no-repeat; 
+.slide1 {
+  background: url("../images/sleeping.jpg") center right/cover no-repeat;
 }
 
-.slide4{
-  background: url("../images/skincare-products.jpg") center center/cover no-repeat; 
+.slide2 {
+  background: url("../images/food.jpg") center center /cover no-repeat;
 }
 
-.block-cursor{
+.slide3 {
+  background: url("../images/selfcare.jpg") center right/cover no-repeat;
+}
+
+.slide4 {
+  background: url("../images/soap.jpg") center right /cover no-repeat;
+}
+
+#back-arrow {
+  grid-area: back-arrow;
+}
+
+#back-arrow img {
+  transform: rotateY(180deg);
+  width: 40px;
+}
+
+.block-cursor {
   pointer-events: none;
   cursor: unset;
   opacity: 0.5;
 }
 
-#highlight-slide1{
+.slide {
+  grid-area: slide;
+}
+
+.card {
+  width: 620px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 70px 70px 60px;
+}
+
+.headline {
+  font-size: 4rem;
+  font-weight: 400;
+  padding-bottom: 30px;
+  font-family: "Playwrite IS", cursive;
+  color: #343333;
+}
+
+.introduction {
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding-bottom: 30px;
+  line-height: 25px;
+}
+
+.read-more {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#highlight-slide1 {
+  color: #e86bd1;
+}
+
+#highlight-slide2 {
+  color: #3086b9;
+}
+
+#highlight-slide3 {
   color: #eb861b;
 }
 
-#highlight-slide2{
-  color: #8fa627;
+#highlight-slide4 {
+  color: #089d53;
 }
 
-#highlight-slide3{
+#highlight-slide5 {
+
   color: #A63A17;
 }
 
-#highlight-slide4{
-  color: #9DA166;
+#forward-arrow {
+  grid-area: forward-arrow;
 }
 
-#highlight-slide5{
-  color: #3c5b27;
+#forward-arrow img {
+  width: 40px;
+}
+
+.hidden {
+  display: none;
 }
