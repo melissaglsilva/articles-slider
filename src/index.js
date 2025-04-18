@@ -28,10 +28,8 @@ backArrows.addEventListener('click', () => {
 })
 
 function changeSlide(currentIndex, nextIndex) {
-  slides[currentIndex].classList.remove('current')
-  slides[currentIndex].classList.add('hidden')
   slides[nextIndex].classList.remove('hidden')
-  slides[nextIndex].classList.add('current')
+  slides[currentIndex].classList.add('hidden')
   background.classList.remove(`slide${currentIndex}`)
   background.classList.add(`slide${nextIndex}`)
 }
