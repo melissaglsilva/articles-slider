@@ -5,9 +5,9 @@
 
 <div align="center">
 
-![last-commit](https://img.shields.io/github/last-commit/melissaglsilva/articles-slider?color=e86bd1)
-![javascript-vanilla](https://img.shields.io/badge/javascript-vanilla-yellow?color=e86bd1)
-![languages](https://img.shields.io/github/languages/count/melissaglsilva/articles-slider?color=e86bd1)
+![last-commit](https://img.shields.io/github/last-commit/melissaglsilva/articles-slider?color=edece3)
+![javascript-vanilla](https://img.shields.io/badge/javascript-vanilla-yellow?color=edece3)
+![languages](https://img.shields.io/github/languages/count/melissaglsilva/articles-slider?color=edece3)
 
 </div>
 
@@ -46,13 +46,13 @@ You can navigate by clicking on the arrows. Each slide will change its title, co
 
 ---
 ## Open on GitHub Pages
-[https://melissaglsilva.github.io/articles-carousel/](https://melissaglsilva.github.io/articles-carousel/)
+[https://melissasilvadev.github.io/articles-carousel/](https://melissasilvadev.github.io/articles-carousel/)
 <br><br>
 
 ## Open Locally
 1. Clone this repository
 ```bash
-git clone https://github.com/melissaglsilva/articles-carousel.git
+git clone https://github.com/melissasilvadev/articles-carousel.git
 ```
 
 2. Go into the repository
