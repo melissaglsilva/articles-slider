@@ -5,9 +5,9 @@
 
 <div align="center">
 
-![last-commit](https://img.shields.io/github/last-commit/melissasilvadev/articles-slider?color=edece3)
+![last-commit](https://img.shields.io/github/last-commit/melissasilvadev/articles-carousel?color=edece3)
 ![javascript-vanilla](https://img.shields.io/badge/javascript-vanilla-yellow?color=edece3)
-![languages](https://img.shields.io/github/languages/count/mmelissasilvadev/articles-slider?color=edece3)
+![languages](https://img.shields.io/github/languages/count/melissasilvadev/articles-carousel?color=edece3)
 
 </div>
 
